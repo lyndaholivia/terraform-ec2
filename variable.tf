@@ -15,18 +15,4 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
-variable "s3_bucket_name" {
-  description = "The name of the S3 bucket for Terraform state storage."
-  type        = string
-}
 
-variable "dynamodb_table_name" {
-  description = "The name of the DynamoDB table for state locking."
-  type        = string
-}
-
-variable "environment" {
-  description = "The environment for tagging (e.g., dev, staging, prod)."
-  type        = string
-  default     = "dev"
-}
